@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    min-height: 100vh;    
+    background: url('bg2.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+}
+.header {
+    height: 100%;
+}
+
+input {
+    color: white;
+    font-family: inherit;
+    font-size: 1rem;
+    padding: 1rem 2rem;
+    margin-bottom: 2rem;
+    background: rgba(238, 53, 53, 1);
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+input::placeholder {
+    color: #bbb;
+}
+
+input:focus {
+    outline: none;
+}
+
+.card {
+    border-radius: 20px;
+    display: flex;
+    padding: 3rem;
+    max-width: 800px;
+    background: rgba( 255, 255, 255, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    /* flex-wrap: wrap; */
+}
+
+.avatar {
+    border: 10px solid rgba(238, 53, 53, 1);
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+    align-items: center;
+}
+
+.user-info {
+    color: rgba(238, 53, 53, 1);
+    margin-left: 2rem;
+}
+
+.user-info h2 {
+    margin-top: 0;
+}
+
+.user-info ul {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    padding: 0;
+    max-width: 400px;
+}
+
+.user-info ul li {
+    display: flex;
+    align-items: center;
+}
+
+.user-info ul li strong {
+    font-size: 0.9rem;
+    margin-left: 0.5rem;
+}
+
+.repo {
+    background-color: rgba(238, 53, 53, 1);
+    border-radius: 5px;
+    display: inline-block;
+    color: white;
+    font-size: 0.7rem;
+    padding: 0.25rem 0.5rem;
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+    text-decoration: none;
+}
+@media(max-width:789px) {
+    .card {
+        max-width: 300px;
+        display: flex;
+        justify-content:center;
+        align-items:center;
+        flex-direction: column;
+        margin: auto;
+    }
+    .user-info {
+        margin-left: 0rem;
+        text-align: center;
+
+    }
+    .user-info h2 {
+        margin-top: 0;
+    }
+    
+    .user-info ul {
+        max-width: 250px;
+        display: flex;
+        flex-direction:column;
+    }
+    
+    .user-info ul li strong {
+        font-size: 0.9rem;
+        margin-left: 0;
+        
+    }
+    
+}
